@@ -19,6 +19,7 @@ function Card({
     const [isFavorite, setIsFavorite] = React.useState(favorited);
 
     const onClickPlus = () => {
+        // debugger
         onPlus({ id, title, imageUrl, price });
     };
 
