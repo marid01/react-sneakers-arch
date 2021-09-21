@@ -38,7 +38,7 @@ function Drawer({onClose, onRemove, items = [], opened}) {
         <div className={`${styles.overlay} ${opened ? styles.overlayVisible : ''}`}>
             <div className={styles.drawer}>
                 <h2 className="d-flex justify-between mb-30">
-                    Корзина <img onClick={onClose} className="cu-p" src="/img/btn-remove.svg" alt="Close"/>
+                    Корзина <img onClick={onClose} className="cu-p" src="img/btn-remove.svg" alt="Close"/>
                 </h2>
 
                 {items.length > 0 ? (
@@ -59,7 +59,7 @@ function Drawer({onClose, onRemove, items = [], opened}) {
                                     <img
                                         onClick={() => onRemove(obj.id)}
                                         className="removeBtn"
-                                        src="/img/btn-remove.svg"
+                                        src="img/btn-remove.svg"
                                         alt="Remove"
                                     />
                                 </div>
@@ -79,7 +79,7 @@ function Drawer({onClose, onRemove, items = [], opened}) {
                                 </li>
                             </ul>
                             <button disabled={isLoading} onClick={onClickOrder} className="greenButton">
-                                Оформить заказ <img src="/img/arrow.svg" alt="Arrow"/>
+                                Оформить заказ <img src="img/arrow.svg" alt="Arrow"/>
                             </button>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ function Drawer({onClose, onRemove, items = [], opened}) {
                                 ? `Ваш заказ #${orderId} скоро будет передан курьерской доставке`
                                 : 'Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.'
                         }
-                        image={isOrderComplete ? '/img/complete-order.jpg' : '/img/empty-cart.jpg'}
+                        image={isOrderComplete ? 'img/complete-order.jpg' : 'img/empty-cart.jpg'}
                     />
 
                 )}
